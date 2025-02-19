@@ -4,16 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegetables shop</title>
+    <title>Vegetables Shop</title>
 
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Free Version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="sora-font">
+    <header class="bg-gradient-to-b to-amber-200 from-yellow-100 ">
+        <!-- navbar section -->
+        <div class="navbar w-11/12 mx-auto grid grid-cols-2 justify-between  md:grid-cols-3 ">
+            <div class="flex-1">
+                <img class="w-24 md:w-32 " src="assets/logo-header.png" alt="Logo">
+            </div>
+            <div class="md:flex md:justify-center  justify-end">
+                <ul class="md:flex space-x-4 hidden">
+                    <li class="font-semibold"><a href="">Product</a></li>
+                    <li class="font-semibold"><a href="">Services</a></li>
+                    <li class="font-semibold "><a href="">Contact</a></li>
+                </ul>
+                <p class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></p>
+            </div>
+            <div class="md:flex gap-4 justify-end hidden">
+                <!-- Fixed Font Awesome Icon -->
+                <i class=" text-2xl fa-solid fa-magnifying-glass"></i>
+                <i class=" text-2xl fa-solid fa-cart-shopping"></i>
+                <button class="btn border-t-neutral-300 rounded-xl">Login</button>
+                <button class="btn border-t-neutral-300 rounded-xl">Register</button>
+            </div>
+        </div>
 
+        <!-- hero section -->
+        <div>
+            <div class="hero md:my-24">
+                <div class="hero-content text-center">
+                    <div class="max-w-2xl">
+                        <h1 class="text-5xl font-bold text-black">Freshness <span class="text-green-700">You Can
+                                Count</span> On, Prices You’ll Love!</h1>
+                        <p class="py-6 text-gray-600">
+                            Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got
+                            you covered every day!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mb-10">
+                <div class="mx-auto">
+                    <img src="assets/hero-vegetables.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+    </footer>
 </body>
 
 </html>
